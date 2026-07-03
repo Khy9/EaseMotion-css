@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Pulse-Active Tooltip</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main class="demo">
+    <header class="demo-header">
+      <p class="eyebrow">Pure CSS interaction</p>
+      <h1>Glass Pulse-Active Tooltips</h1>
+      <p class="intro">
+        Hover over an action or navigate with the Tab key to reveal
+        responsive glassmorphism tooltips.
+      </p>
+    </header>
+
+    <section class="glass-panel" aria-label="Tooltip demonstration">
+
+      <div class="action-bar">
+        <div class="tooltip-wrap">
+          <button
+            class="action-button"
+            type="button"
+            aria-describedby="tooltip-search"
+          >
+            <span aria-hidden="true">⌕</span>
+            <span class="sr-only">Search</span>
+          </button>
+
+          <span
+            class="glass-tooltip"
+            id="tooltip-search"
+            role="tooltip"
+          >
+            Search workspace
+          </span>
+        </div>
+
+        <div class="tooltip-wrap tooltip-wrap--slow">
+          <button
+            class="action-button"
+            type="button"
+            aria-describedby="tooltip-save"
+          >
+            <span aria-hidden="true">♡</span>
+            <span class="sr-only">Save</span>
+          </button>
+
+          <span
+            class="glass-tooltip"
+            id="tooltip-save"
+            role="tooltip"
+          >
+            Save to favorites
+          </span>
+        </div>
+
+        <div class="tooltip-wrap tooltip-wrap--bold">
+          <button
+            class="action-button"
+            type="button"
+            aria-describedby="tooltip-share"
+          >
+            <span aria-hidden="true">↗</span>
+            <span class="sr-only">Share</span>
+          </button>
+
+          <span
+            class="glass-tooltip"
+            id="tooltip-share"
+            role="tooltip"
+          >
+            Share this workspace
+          </span>
+        </div>
+      </div>
+
+      <p class="panel-hint">
+        Try hover, keyboard focus, and different screen sizes.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
